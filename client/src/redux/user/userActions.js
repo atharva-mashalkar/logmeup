@@ -24,7 +24,7 @@ export const checkUserError = (err) => {
 export const fetchUser = () => {
 
 	return(dispatch) => {
-		axios.get('https://logmeup.herokuapp.com/user/new')
+		axios.get('http://localhost:5000/user/new')
 			.then(res => {
 				const user = res.data
 				dispatch(checkUserSuccess(user))

@@ -60,13 +60,10 @@ function Navbar() {
 	}, [localStorage.setNav])
 
 	const handleClick = e => {
-	    console.log('click ', e.key);
 	    setCurrent(e.key);
-	    console.log(e.item);
 	};
 
 	const handleCurrent = e => {
-	    console.log('click ', e);
 	    setCurrent2(e.key);
 	};
 

@@ -41,9 +41,8 @@ export const signup = (FirstName , LastName , DOB , Email , Password) => {
 	const newSignup = {
 		FirstName , LastName , DOB , Email , Password
 	}
-	console.log(FirstName , LastName ,  DOB , Email , Password);
-	axios.post('https://logmeup.herokuapp.com/signup/add' , newSignup)
-			.then(res => console.log("Data saved: " + res.data))
+	axios.post('http://localhost:5000/signup/add' , newSignup)
+			.then(res => console.log("Data saved"))
 			.catch(err => console.log(err));
 }
 

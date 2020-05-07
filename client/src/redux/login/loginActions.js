@@ -21,7 +21,7 @@ export const checkUser = (Email , Password) => {
 	const login = {
 		 Email , Password
 	}
-	axios.post('https://logmeup.herokuapp.com/login/find' , login)
+	axios.post('http://localhost:5000/login/find' , login)
 		.then(res => {
 			const token = res.data.token;
 				localStorage.setItem('jwtToken' , token);

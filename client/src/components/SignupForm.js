@@ -72,15 +72,11 @@ function SignupForm() {
   	};
 
   	function onChange(value, dateString) {
-  		console.log('Formatted Selected Time: ', dateString);
   		dispatch(addDOB(dateString));
   		setSelectedDate(dateString);
 	}
 
-	function onOk(value) {
-	  console.log('onOk: ', value);
-	}
-
+	
 	return (
 		<div>
 			<Form 
@@ -135,7 +131,6 @@ function SignupForm() {
 			      		size="large" 
 			      		showTime 
 			      		onChange={onChange}
-			      		onOk = {onOk}
 			      		style = {{borderRadius : '2rem' , color : '#0D232A', border: '2px solid #D1C7C7'}} 
 			      		/>
 			      </Form.Item>
