@@ -1,0 +1,3 @@
+export const CHECK_EMAIL = 'CHECK_EMAIL';
+export const CHECK_PASSWORD = 'CHECK_PASSWORD';
+
